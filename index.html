@@ -1,0 +1,630 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<title>SUSTENTAR</title>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<script type="text/javascript" src="./extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="./extras/modernizr.2.5.3.min.js"></script>
+<script type="text/javascript" src="./lib/hash.js"></script>
+<!-- font -->
+
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+<!-- icon bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="icon" href="./img/logo_pestanya.png">
+</head>
+<body>
+	<div id="canvas">
+		
+		<div class="zoom-icon zoom-icon-in"></div>
+		
+<div class="magazine-viewport" >
+	<div class="menu" >
+
+		
+		<i id="flechaMenu" class="bi bi-chevron-compact-right"></i>
+
+
+		<ul style="color: white;">
+			<li>
+				<div class="ciculoColor"></div>
+			</li>
+			<li >
+				<img class="logoMenu" src="./img/perfil.png" width="100" alt="">
+			</li>
+
+			<li><p class="myname">SUSTENTAR</p></li>
+			<li><p class="title">DECIDIMOS VIVIR MEJOR</p></li>
+			<!-- <li><p class="description">Profesional independiente, especializado en Diseño, Tecnología y Programación</p></li> -->
+			<!-- <li>
+				<p class="hab">Revit</p>
+				<p class="hab">AutoCAD</p>
+				<p class="hab">Revit MEP</p>
+				<p class="hab">Adobe Photoshop</p>
+				<p class="hab">Sketchup</p>
+				<p class="hab">Blender</p>
+				<p class="hab">3Ds Max</p>
+				<p class="hab">Lumion</p>
+				<p class="hab">Twinmotion</p>
+				<p class="hab">Adobe Premier</p>
+				<p class="hab">Adobe After effects</p>
+				<p class="hab">Vray</p>
+				<p class="hab">Excel</p>
+				<p class="hab">Google Sheets</p>
+				<p class="hab">Desarrollo Web</p>
+				<p class="hab">Diseño Web</p>
+				<p class="hab">APIs</p>
+				<p class="hab">Fotografía</p>
+				<p class="hab">HTML5</p>
+				<p class="hab">CSS</p>
+				<p class="hab">JavaScript</p>
+				<p class="hab">Python</p>
+				<p class="hab">Nodejs</p>
+				<p class="hab">SASS</p>
+				<p class="hab">Bootstrap</p>
+				<p class="hab">Git</p>
+				<p class="hab">Inteligencia Artificial</p>
+				<p class="hab">Figma</p>
+				<p class="hab">Vue JS</p>
+				<p class="hab">Next JS</p>
+				<p class="hab">React JS</p>
+				<p class="hab">PHP</p>
+				<p class="hab">SQL</p>
+				<p class="hab">MySQL</p>
+				
+			</li> -->
+		</ul>
+
+		<ul class="contactoMenu">
+
+			<li><a href="mailto:sustentarnqn@gmail.com" style="font-size: 0.8rem;" target="_blank">
+				<!-- <i class="bi bi-envelope" style="color: white; margin-right: 1rem;"></i>  -->
+				sustentarnqn@gmail.com</a>
+			</li>
+
+			<li><a href="https://wa.me/5492996355396" target="_blank">
+				<!-- <i class="bi bi-telephone" style="color: white; margin-right: 1.3rem;"></i> -->
+				 +54 9 2996-35-5396</a>
+			</li>
+	
+			<li> <a href="https://www.google.com/maps/search/?api=1&query=Dorrego+2486,+Moreno,+Buenos+Aires,+Argentina" target="_blank">
+				<!-- <i class="bi bi-geo-alt" style="color: white; margin-right: 1rem;"></i> -->
+			  San Martin 195, piso 9, oficina 5,Neuquén</a>
+			</li>
+			<!-- <li> <a href="#">www.jpstudio.com</a></li> -->
+		</ul>
+	</div>
+	<!-- contacto -->
+	<div class="contacto" >
+		<a class="wp" href="https://wa.me/5491151487328" style="display: flex;" target="_blank">
+			<p>Contáctanos por Whatsapp 
+				<!-- <i class="bi bi-whatsapp"></i> -->
+			</p> 
+			<img  src="./img/whatsap.png">
+		</a>
+		<a class="tel" href="tel:+5491151487328" target="_blank">
+			<p>Puedes llamar y con gusto atenderemos</p>
+			<img  src="./img/llamada.png" >
+		</a>
+		<a  class="cv" href="./download/RC_portafolio.pdf" download="portafolio" target="_blank"> 
+			<!-- ./download/# -->
+			<p>Puedes descargar el catálogo</p>
+			<img src="./img/cv.png">
+		</a>
+	</div>
+
+	<!-- fondo video -->
+	<video muted autoplay loop>
+		<source src="./video/background4.mp4" type="video/mp4">
+	</video>
+
+
+
+	<div class="capa"></div>
+	<img id='flechas' class="flechas" src="./img/flechitas_teclado.png" >
+	<!-- botones para pasar pagina -->
+	<div class="container">
+		<div class="magazine">
+			<!-- Next button -->
+			<div ignore="1" class="next-button"></div>
+			<!-- Previous button -->
+			<div ignore="1" class="previous-button"></div>
+		</div>
+	</div>
+
+
+	<!-- copyright -->
+	<div style="display: flex; flex-direction: column;">
+		
+		<p id="copy" style=" z-index: 9; position: absolute; bottom: 0; color: white; left: 50%; transform: translateX(-50%);font-family:sans-serif; font-size: 0.7rem; text-shadow: 1px 2px  black; "> Copyright © 2024 - NIC</p>
+	</div>
+</div>
+
+
+
+
+<div class="loading-page">
+
+		<svg id="svg"  xmlns="http://www.w3.org/2000/svg" width="373" height="547" viewBox="0 0 373 547">
+			<defs>
+			  <style>
+				.cls-1 {
+				  fill: #00b83a;
+				  stroke: #ffffff;
+				  stroke-width: 5px;
+				  fill-rule: evenodd;
+				}
+			  </style>
+			</defs>
+			<path id="Forma_1" data-name="Forma 1" class="cls-1" d="M207,19c21.963,8.038,38.788,28.519,56,42,47.3,37.045,107.348,123.212,81,216-5.323,18.747-12.25,37.573-21,53-8.9,15.694-23.864,49.323-38,58V313l-1-2-77-50V19Zm-16,4q-0.5,63.994-1,128l-87,57V371H86c-12.4-23.974-24.327-48.5-32-78C30.019,200.805,80.211,105.8,128,66,143.083,53.439,168.407,25.808,191,23Zm-1,146c5.358,6.38,2,62.4,2,76V462h-1v-1c-16.44-17.972-22.623-42.912-42-58l-31-21V217q0.5-1,1-2Zm18,333V281h2c9.448,10.481,54.918,30.316,59,38V501ZM87,389c51.806,3.754,92.932,63.233,100,113H87V389ZM29,497H69v5H34v16H329v-2q0.5-6.5,1-13l-43-1v-5h47v26H29V497Z"/>
+		  </svg>
+
+	<div class="name-container">
+		<div class="logo-name">SUSTENTAR</div>
+		<div class="parrafo">DECIDIMOS VIVIR MEJOR</div>
+
+	</div>
+</div> 
+
+
+
+
+<!-- Thumbnails -->
+<!-- <div class="thumbnails" style="display: none;">
+	<div>
+		<ul>
+			<li class="i">
+				<img src="pages/1-thumb.jpg" width="76" height="100" class="page-1">
+				<span>1</span>
+			</li>
+			<li class="d">
+				<img src="pages/2-thumb.jpg" width="76" height="100" class="page-2">
+				<img src="pages/3-thumb.jpg" width="76" height="100" class="page-3">
+				<span>2-3</span>
+			</li>
+			<li class="d">
+				<img src="pages/4-thumb.jpg" width="76" height="100" class="page-4">
+				<img src="pages/5-thumb.jpg" width="76" height="100" class="page-5">
+				<span>4-5</span>
+			</li>
+			<li class="d">
+				<img src="pages/6-thumb.jpg" width="76" height="100" class="page-6">
+				<img src="pages/7-thumb.jpg" width="76" height="100" class="page-7">
+				<span>6-7</span>
+			</li>
+			<li class="d">
+				<img src="pages/8-thumb.jpg" width="76" height="100" class="page-8">
+				<img src="pages/9-thumb.jpg" width="76" height="100" class="page-9">
+				<span>8-9</span>
+			</li>
+			<li class="d">
+				<img src="pages/10-thumb.jpg" width="76" height="100" class="page-10">
+				<img src="pages/11-thumb.jpg" width="76" height="100" class="page-11">
+				<span>10-11</span>
+			</li>
+			<li class="d">
+				<img src="pages/12-thumb.jpg" width="76" height="100" class="page-10">
+				<img src="pages/13-thumb.jpg" width="76" height="100" class="page-11">
+				<span>10-11</span>
+			</li>
+
+			<li class="i">
+				<img src="pages/14-thumb.jpg" width="76" height="100" class="page-12">
+				<span>12</span>
+			</li>
+		<ul>
+	<div>	
+</div>
+
+
+</div> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+flechas = document.getElementById('flechas')
+function loadApp() {
+	/*
+	Esta funcion carga la aplicacion flipbook.
+	 */
+
+ 	$('#canvas').fadeIn(1000);
+
+ 	var flipbook = $('.magazine');
+
+ 	// Check if the CSS was already loaded
+	
+	if (flipbook.width()==0 || flipbook.height()==0) {
+		setTimeout(loadApp, 10);
+		return;
+	}
+	
+	// Create the flipbook
+
+	flipbook.turn({
+			/*
+			Esta función se encarga de ajustar el tamaño de la revista 
+			*/
+			// Magazine width
+
+			width: 1100,
+			// width: 922,
+			// width: 1400,
+
+			// Magazine height
+
+			height: 600,
+
+			// Duration in millisecond
+
+			duration: 1000,
+
+			// Hardware acceleration
+
+			acceleration: !isChrome(),
+
+			// Enables gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true,
+
+			// Elevation from the edge of the flipbook when turning a page
+
+			elevation: 50,
+
+			// The number of pages
+
+			pages: 32,
+
+			// Events
+
+			when: {
+				turning: function(event, page, view) {
+					
+					var book = $(this),
+					currentPage = book.turn('page'),
+					pages = book.turn('pages');
+			
+					// Update the current URI
+
+					Hash.go('page/' + page).update();
+
+					// Show and hide navigation buttons
+
+					disableControls(page);
+					
+
+					$('.thumbnails .page-'+currentPage).
+						parent().
+						removeClass('current');
+
+					$('.thumbnails .page-'+page).
+						parent().
+						addClass('current');
+				},
+
+				turned: function(event, page, view) {
+
+					disableControls(page);
+
+					$(this).turn('center');
+
+					if (page==1) { 
+						$(this).turn('peel', 'br');
+					}
+
+				},
+
+				missing: function (event, pages) {
+
+					// Add pages that aren't in the magazine
+
+					for (var i = 0; i < pages.length; i++)
+						addPage(pages[i], $(this));
+
+				}
+			}
+
+	});
+
+	// Zoom.js
+
+	$('.magazine-viewport').zoom({
+		flipbook: $('.magazine'),
+
+		max: function() { 
+			flechas.style.display = 'none';
+			return largeMagazineWidth()/$('.magazine').width();
+
+		}, 
+
+		when: {
+
+			swipeLeft: function() {
+
+				$(this).zoom('flipbook').turn('next');
+
+			},
+
+			swipeRight: function() {
+				
+				$(this).zoom('flipbook').turn('previous');
+
+			},
+
+			resize: function(event, scale, page, pageElement) {
+
+				if (scale==1)
+					loadSmallPage(page, pageElement);
+				else
+					loadLargePage(page, pageElement);
+
+			},
+
+			zoomIn: function () {
+				$('.thumbnails').hide();
+				$('.made').hide();
+				$('.magazine').removeClass('animated').addClass('zoom-in');
+				$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
+				
+				if (!window.escTip && !$.isTouch) {
+					escTip = true;
+					$('<div />', {'class': 'exit-message'}).
+						html('<div>Press ESC to exit</div>').
+							appendTo($('body')).
+							delay(2000).
+							animate({opacity:0}, 500, function() {
+								$(this).remove();
+							});
+				}
+			},
+
+			zoomOut: function () {
+				flechas.style.display = 'block';
+				$('.exit-message').hide();
+				$('.thumbnails').fadeIn();
+				$('.made').fadeIn();
+				$('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
+
+				setTimeout(function(){
+					$('.magazine').addClass('animated').removeClass('zoom-in');
+					resizeViewport();
+				}, 0);
+
+			}
+		}
+	});
+
+	// Zoom event
+
+	if ($.isTouch)
+		$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
+	else
+		$('.magazine-viewport').bind('zoom.tap', zoomTo);
+
+
+	// Using arrow keys to turn the page
+	
+	$(document).keydown(function(e){
+		/*utilizar las teclas para pasar de pagina*/
+		var previous = 37, next = 39, esc = 27;
+
+		switch (e.keyCode) {
+			case previous:
+
+				// left arrow
+				$('.magazine').turn('previous');
+				e.preventDefault();
+
+			break;
+			case next:
+
+				//right arrow
+				$('.magazine').turn('next');
+				e.preventDefault();
+
+			break;
+			case esc:
+				
+				$('.magazine-viewport').zoom('zoomOut');	
+				e.preventDefault();
+
+			break;
+		}
+	});
+
+	// URIs - Format #/page/1 
+
+	Hash.on('^page\/([0-9]*)$', {
+		yep: function(path, parts) {
+			var page = parts[1];
+
+			if (page!==undefined) {
+				if ($('.magazine').turn('is'))
+					$('.magazine').turn('page', page);
+			}
+
+		},
+		nop: function(path) {
+
+			if ($('.magazine').turn('is'))
+				$('.magazine').turn('page', 1);
+		}
+	});
+
+
+	$(window).resize(function() {
+		resizeViewport();
+	}).bind('orientationchange', function() {
+		resizeViewport();
+	});
+
+	// Events for thumbnails
+
+	$('.thumbnails').click(function(event) {
+		
+		var page;
+
+		if (event.target && (page=/page-([0-9]+)/.exec($(event.target).attr('class'))) ) {
+		
+			$('.magazine').turn('page', page[1]);
+		}
+	});
+
+	$('.thumbnails li').
+		bind($.mouseEvents.over, function() {
+			
+			$(this).addClass('thumb-hover');
+
+		}).bind($.mouseEvents.out, function() {
+			
+			$(this).removeClass('thumb-hover');
+
+		});
+
+	if ($.isTouch) {
+	
+		$('.thumbnails').
+			addClass('thumbanils-touch').
+			bind($.mouseEvents.move, function(event) {
+				event.preventDefault();
+			});
+
+	} else {
+
+		$('.thumbnails ul').mouseover(function() {
+
+			$('.thumbnails').addClass('thumbnails-hover');
+
+		}).mousedown(function() {
+
+			return false;
+
+		}).mouseout(function() {
+
+			$('.thumbnails').removeClass('thumbnails-hover');
+
+		});
+
+	}
+
+
+	// Regions
+	if ($.isTouch) {
+		$('.magazine').bind('touchstart', regionClick);
+	} else {
+		$('.magazine').click(regionClick);
+	}
+
+	// Events for the next button
+
+	$('.next-button').bind($.mouseEvents.over, function() {
+		
+		$(this).addClass('next-button-hover');
+
+	}).bind($.mouseEvents.out, function() {
+		
+		$(this).removeClass('next-button-hover');
+
+	}).bind($.mouseEvents.down, function() {
+		
+		$(this).addClass('next-button-down');
+
+	}).bind($.mouseEvents.up, function() {
+		
+		$(this).removeClass('next-button-down');
+
+	}).click(function() {
+		
+		$('.magazine').turn('next');
+
+	});
+
+	// Events for the next button
+	
+	$('.previous-button').bind($.mouseEvents.over, function() {
+		
+		$(this).addClass('previous-button-hover');
+
+	}).bind($.mouseEvents.out, function() {
+		
+		$(this).removeClass('previous-button-hover');
+
+	}).bind($.mouseEvents.down, function() {
+		
+		$(this).addClass('previous-button-down');
+
+	}).bind($.mouseEvents.up, function() {
+		
+		$(this).removeClass('previous-button-down');
+
+	}).click(function() {
+		
+		$('.magazine').turn('previous');
+
+	});
+
+
+	resizeViewport();
+
+	$('.magazine').addClass('animated');
+
+}
+
+// Zoom icon
+
+ $('.zoom-icon').bind('mouseover', function() { 
+ 	
+ 	if ($(this).hasClass('zoom-icon-in'))
+ 		$(this).addClass('zoom-icon-in-hover');
+
+ 	if ($(this).hasClass('zoom-icon-out'))
+ 		$(this).addClass('zoom-icon-out-hover');
+ 
+ }).bind('mouseout', function() { 
+ 	
+ 	 if ($(this).hasClass('zoom-icon-in'))
+ 		$(this).removeClass('zoom-icon-in-hover');
+ 	
+ 	if ($(this).hasClass('zoom-icon-out'))
+ 		$(this).removeClass('zoom-icon-out-hover');
+
+ }).bind('click', function() {
+
+ 	if ($(this).hasClass('zoom-icon-in'))
+ 		$('.magazine-viewport').zoom('zoomIn');
+ 	else if ($(this).hasClass('zoom-icon-out'))	
+		$('.magazine-viewport').zoom('zoomOut');
+
+ });
+
+ $('#canvas').hide();
+
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['./lib/turn.js'],
+	nope: ['./lib/turn.html4.min.js'],
+	both: ['./lib/zoom.min.js', './js/magazine.js', './css/magazine.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
