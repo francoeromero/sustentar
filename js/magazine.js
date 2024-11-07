@@ -2,6 +2,29 @@
  * Magazine sample
 */
 
+// function applyResponsiveRotation() {
+//     if (window.innerWidth <= 600) {
+//         document.body.style.transform = 'rotate(-90deg)';
+//         document.body.style.transformOrigin = 'center';
+//         document.body.style.width = '100vh';
+//         document.body.style.height = '100vw';
+//         document.body.style.overflow = 'hidden';
+//     } else {
+//         // Restablecer estilos para pantallas más grandes
+//         document.body.style.transform = '';
+//         document.body.style.width = '';
+//         document.body.style.height = '';
+//         document.body.style.overflow = '';
+//     }
+// }
+
+// // Aplicar al cargar y al cambiar el tamaño de la pantalla
+// applyResponsiveRotation();
+// window.addEventListener('resize', applyResponsiveRotation);
+
+
+
+
 function addPage(page, book) {
 
 	var id, pages = book.turn('pages');
@@ -256,7 +279,14 @@ function resizeViewport() {
 			$('.previous-button').css({height: bound.height, backgroundPosition: '-4px '+(bound.height/2-32/2)+'px'});
 		}
 
-		$('.magazine').css({top: -bound.height/2, left: -bound.width/2});
+		// $('.magazine').css({top: -bound.height/2, left: -bound.width/2});
+		// $('.magazine').css({top: -bound.height/4, left: -bound.width/4});
+		$('.magazine').css({
+			top: -bound.height / 2,
+			left: -bound.width / 2,
+
+			// transform: 'rotate(-90deg)'
+		});
 	}
 
 	var magazineOffset = $('.magazine').offset(),

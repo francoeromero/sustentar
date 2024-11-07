@@ -408,6 +408,7 @@ video{
 	height:600px;
 	left:-461px;
 	top:-300px;
+
 }
 
 .magazine-viewport {
@@ -418,6 +419,7 @@ video{
 	
 	background-repeat:no-repeat;
 	background-size:100% 100%; */
+	position: relative;
 }
 
 .magazine-viewport .zoomer .region{
@@ -549,7 +551,13 @@ video{
 	height:600px;
 	position:absolute;
 	top:0;
+	
 }
+
+
+
+
+
 
 .magazine-viewport .next-button{
 	right:-22px;
@@ -569,9 +577,14 @@ video{
 	border-radius:15px 0 0 15px;
 }
 
+
+
+
+
 .magazine-viewport .previous-button-hover,
 .magazine-viewport .next-button-hover{
-	background-color:rgba(216, 216, 216, 0.5);
+	background-color: rgba(136, 230, 14, 0.11);
+	
 }
 
 .magazine-viewport .previous-button-hover,
@@ -807,6 +820,64 @@ video{
 }
 
 @media(max-width:1400px){
+	.magazine-viewport{
+		position: relative !important;
+	}
+	.magazine-viewport .previous-button{
+		width:5rem !important;
+		height:2rem !important;
+		position:fixed !important;
+		bottom: 0 !important;
+		z-index: 999;
+		transform: translate(-100%, 950%) !important;
+		background: #053803;
+		
+	}
+	
+	.magazine-viewport .next-button{
+		width:5rem !important;
+		height:2rem !important;
+		position:fixed !important;
+		bottom: 0 !important;
+		z-index: 999;
+		transform: translate(0%, 950%) !important;
+		background: #053803;
+		background-image:url(../pics/arrows.png);
+		background-repeat: no-repeat;
+		background-position: 10px,10px;
+		background-size: contain; 
+		
+	}
+	
+
+	.magazine-viewport .next-button,
+	.magazine-viewport .previous-button{
+		width:22px;
+		height:600px;
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 99999 !important;
+	}
+	.magazine-viewport {
+		
+		width: 55rem !important;
+		border: 3px solid #1d751a;
+		position: absolute;
+		inset: 0; /* Esto establece top, right, bottom y left en 0 */
+		margin: auto; /* Centra el elemento automáticamente */
+		overflow-x: scroll;
+	}
+	 .magazine{
+		/* transform: rotate(-90deg); */
+		scale: 1.9;
+		top: 50%;
+        left: 50%;
+	} 
+
+
+
 	.flechas{
 		display: none;
 		opacity: 0;
@@ -821,6 +892,8 @@ video{
 		display: none;
 	}
 }
+
+
 
 @media(max-width:600px){
 	.flechas{
