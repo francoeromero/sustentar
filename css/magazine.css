@@ -820,8 +820,10 @@ video{
 }
 
 @media(max-width:1400px){
+
 	.magazine-viewport{
 		position: relative !important;
+		overflow: scroll;
 	}
 	.magazine-viewport .previous-button{
 		width:5rem !important;
