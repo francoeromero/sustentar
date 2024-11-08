@@ -487,3 +487,20 @@ gsap.fromTo(
   
 
   document.querySelector("video").playbackRate = 0.7; 
+
+
+
+
+
+
+
+
+
+
+  // Ejecutar solo en pantallas de menos de 1400px
+if (window.innerWidth <= 1400) {
+    const viewport = document.querySelector('.magazine-viewport');
+    viewport.addEventListener('touchmove', function(e) {
+        e.stopPropagation();
+    }, { passive: true });
+}

@@ -361,14 +361,15 @@ video{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+    width: 100vw !important; /* Usa toda la anchura de la ventana de visualización */
+    height: 100vh !important; /* Usa toda la altura de la ventana de visualización */
 	object-fit: cover;
 	filter: blur(10px); /* Ajuste del desenfoque */
+	background-size: cover;
 }
 .capa {
-    width: 100%;
-    height: 100%;
+    width: 100vw !important; /* Usa toda la anchura de la ventana de visualización */
+    height: 100vh !important; /* Usa toda la altura de la ventana de visualización */
     position: absolute;
     top: 0;
     left: 0;
@@ -820,10 +821,19 @@ video{
 }
 
 @media(max-width:1400px){
+	
+	#copy{
+		display: none;
+	}
+	video,.capa{
+		width: 210vw !important; 
 
+	}
 	.magazine-viewport{
 		position: relative !important;
-		overflow: scroll;
+		overflow-x: scroll !important;
+		touch-action: pan-x pan-y !important;
+
 	}
 	.magazine-viewport .previous-button{
 		width:5rem !important;
@@ -864,7 +874,7 @@ video{
 	}
 	.magazine-viewport {
 		
-		width: 55rem !important;
+		width: 50rem !important;
 		border: 3px solid #1d751a;
 		position: absolute;
 		inset: 0; /* Esto establece top, right, bottom y left en 0 */
@@ -875,7 +885,8 @@ video{
 		/* transform: rotate(-90deg); */
 		scale: 1.9;
 		top: 50%;
-        left: 50%;
+        left: 20% !important;
+		
 	} 
 
 
