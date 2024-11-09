@@ -496,7 +496,7 @@ window.addEventListener('load', () => {
     const contenedor = document.querySelector('.magazine-viewport'); // Selecciona el elemento con la clase
     if (contenedor) {
         contenedor.scrollTo({
-            left: 500, // Cambia este valor a la posición deseada en el eje x
+            left: 1000, // Cambia este valor a la posición deseada en el eje x
             behavior: 'smooth' // 'smooth' para desplazamiento suave o 'auto' para instantáneo
         });
     }
