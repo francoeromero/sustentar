@@ -851,7 +851,84 @@ video{
 
 
 
+.flechas_responsive{
+	display: none;	
+}
 @media(max-width:1400px){
+	.flechas_responsive{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+
+
+
+
+
+	.next-button-responsive{
+		position: fixed;
+		width: 8rem;
+		z-index: 9 !important;
+		bottom: 0;
+		left: 0;
+		margin-left: 5rem;
+		margin-bottom: 5rem;
+		animation: shakeRight 3s infinite;
+	}
+	.previous-button-responsive{
+		position: fixed;
+		width: 8rem;
+		z-index: 9 !important;
+		bottom: 0;
+		right: 0;
+		margin-right: 5rem;
+		margin-bottom: 5rem;
+		animation: shakeLeft 3s infinite;
+
+	}
+	@keyframes shakeRight {
+		0%, 100% {
+			transform: translateX(0);
+		}
+		20% {
+			transform: translateX(10px);
+		}
+		40% {
+			transform: translateX(-10px);
+		}
+		60% {
+			transform: translateX(5px);
+		}
+		80% {
+			transform: translateX(-5px);
+		}
+	}
+	
+	@keyframes shakeLeft {
+		0%, 100% {
+			transform: translateX(0);
+		}
+		20% {
+			transform: translateX(-10px);
+		}
+		40% {
+			transform: translateX(10px);
+		}
+		60% {
+			transform: translateX(-5px);
+		}
+		80% {
+			transform: translateX(5px);
+		}
+	}
+
+
+
+
+
+
 	.responsive-icons{
 		display: flex;
 	}
@@ -866,17 +943,18 @@ video{
 		position: relative !important;
 		overflow-x: scroll !important;
 		touch-action: pan-x pan-y !important;
-
 	}
-	.magazine-viewport .previous-button{
+
+	/* .magazine-viewport .previous-button{
+		position: fixed;
 		width:3rem !important;
 		height:2rem !important;
 		position:fixed !important;
 		bottom: 0 !important;
 		z-index: 999;
-		transform: translate(-110%, 950%) !important;
-		/* background: red; */
-		background: linear-gradient(135deg, #759e06 0%, #a5c667 100%);
+		transform: translate(-110%, 550%) !important;
+		background: linear-gradient(135deg, #759e06 0%, #a5c667 100%); 
+		background: rgb(230, 229, 229);
 		clip-path: polygon(
 			100% 0%,         
 			15% 35%,        
@@ -885,31 +963,36 @@ video{
 			100% 100%        
 		);
 		border-radius: 20%;
+		scale: 1.9;
 	}
 				
 	
 	.magazine-viewport .next-button{
+		
 		width:3rem !important;
 		height:2rem !important;
 		position:fixed !important;
 		bottom: 0 !important;
 		z-index: 999;
-		transform: translate(10%, 950%) !important;
-		background: linear-gradient(135deg, #759e06 0%, #a5c667 100%);
+		transform: translate(10%, 550%) !important;
+		background: linear-gradient(135deg, #759e06 0%, #a5c667 100%); 
+		background: rgb(230, 229, 229);
 		background-position: 10px,10px;
 		clip-path: polygon(
-			0% 0%,           /* Vértice superior de la punta */
-			85% 35%,         /* Curva hacia la parte trasera */
-			90% 50%,         /* Punto medio trasero */
-			85% 65%,         /* Curva inferior hacia la punta */
-			0% 100%          /* Vértice inferior de la punta */
+			0% 0%,           
+			85% 35%,        
+			90% 50%,         
+			85% 65%,       
+			0% 100%         
 		);
 		border-radius: 20%;
+		scale: 1.9;
 	}
-	
+	 */
 
 	.magazine-viewport .next-button,
 	.magazine-viewport .previous-button{
+		
 		width:22px;
 		height:600px;
 		position:absolute;

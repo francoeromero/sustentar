@@ -225,6 +225,7 @@ function isChrome() {
 
 }
 
+
 function disableControls(page) {
 		if (page==1)
 			$('.previous-button').hide();
@@ -236,6 +237,9 @@ function disableControls(page) {
 		else
 			$('.next-button').show();
 }
+
+
+
 
 // Set the width and height for the viewport
 
@@ -510,3 +514,18 @@ window.addEventListener('load', () => {
 //         e.stopPropagation();
 //     }, { passive: true });
 // }
+
+// $('.previous-button').click();
+
+// RESPONSIVE CLICK FLECHAS
+
+$(document).ready(function() {
+    $('.next-button-responsive').on('click', function() {
+        $('.next-button').click();
+    });
+});
+$(document).ready(function() {
+    $('.previous-button-responsive').on('click', function() {
+        $('.previous-button').click();
+    });
+});
