@@ -920,7 +920,7 @@ video{
 	}
 	.magazine-viewport {
 		
-		width: 50rem !important;
+		width: 70rem !important;
 		/* border: 3px solid #1d751a; */
 		position: absolute;
 		inset: 0; /* Esto establece top, right, bottom y left en 0 */
