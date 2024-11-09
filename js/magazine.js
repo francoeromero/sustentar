@@ -23,8 +23,6 @@
 // window.addEventListener('resize', applyResponsiveRotation);
 
 
-
-
 function addPage(page, book) {
 
 	var id, pages = book.turn('pages');
@@ -493,14 +491,22 @@ gsap.fromTo(
 
 
 
+// Al CAGARSE LA PAGINA SI ESTA ACTIVADO EL SCROLL(es porque esta en responsive) SE MUEVA PARA CENTRARSE
+window.addEventListener('load', () => {
+    const contenedor = document.querySelector('.magazine-viewport'); // Selecciona el elemento con la clase
+    if (contenedor) {
+        contenedor.scrollTo({
+            left: 500, // Cambia este valor a la posición deseada en el eje x
+            behavior: 'smooth' // 'smooth' para desplazamiento suave o 'auto' para instantáneo
+        });
+    }
+});
 
 
-
-
-  // Ejecutar solo en pantallas de menos de 1400px
-if (window.innerWidth <= 1400) {
-    const viewport = document.querySelector('.magazine-viewport');
-    viewport.addEventListener('touchmove', function(e) {
-        e.stopPropagation();
-    }, { passive: true });
-}
+//   // Ejecutar solo en pantallas de menos de 1400px
+// if (window.innerWidth <= 1400) {
+//     const viewport = document.querySelector('.magazine-viewport');
+//     viewport.addEventListener('touchmove', function(e) {
+//         e.stopPropagation();
+//     }, { passive: true });
+// }
