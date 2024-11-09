@@ -519,6 +519,21 @@ window.addEventListener('load', () => {
 
 // RESPONSIVE CLICK FLECHAS
 
+function disableControls(page) {
+	if (page==1)
+		$('.previous-button-responsive').hide();
+	else
+		$('.previous-button-responsive').show();
+				
+	if (page==$('.magazine').turn('pages'))
+		$('.next-button-responsive').hide();
+	else
+		$('.next-button-responsive').show();
+}
+
+
+
+
 $(document).ready(function() {
     $('.next-button-responsive').on('click', function() {
         $('.next-button').click();
