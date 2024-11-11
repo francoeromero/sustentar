@@ -866,18 +866,7 @@ video{
 
 
 
-
 	.next-button-responsive{
-		position: fixed;
-		width: 8rem;
-		z-index: 9 !important;
-		bottom: 0;
-		left: 0;
-		margin-left: 5rem;
-		margin-bottom: 5rem;
-		animation: shakeRight 3s infinite;
-	}
-	.previous-button-responsive{
 		position: fixed;
 		width: 8rem;
 		z-index: 9 !important;
@@ -886,6 +875,16 @@ video{
 		margin-right: 5rem;
 		margin-bottom: 5rem;
 		animation: shakeLeft 3s infinite;
+	}
+	.previous-button-responsive{
+		position: fixed;
+		width: 8rem;
+		z-index: 9 !important;
+		bottom: 0;
+		left: 0;
+		margin-left: 5rem;
+		margin-bottom: 5rem;
+		animation: shakeRight 3s infinite;
 
 	}
 	@keyframes shakeRight {

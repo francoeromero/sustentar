@@ -506,17 +506,6 @@ window.addEventListener('load', () => {
     }
 });
 
-
-//   // Ejecutar solo en pantallas de menos de 1400px
-// if (window.innerWidth <= 1400) {
-//     const viewport = document.querySelector('.magazine-viewport');
-//     viewport.addEventListener('touchmove', function(e) {
-//         e.stopPropagation();
-//     }, { passive: true });
-// }
-
-// $('.previous-button').click();
-
 // RESPONSIVE CLICK FLECHAS
 
 function disableControls(page) {
@@ -535,12 +524,26 @@ function disableControls(page) {
 
 
 $(document).ready(function() {
+	// const contenedor = document.querySelector('.magazine-viewport'); 
     $('.next-button-responsive').on('click', function() {
         $('.next-button').click();
+		// if (contenedor) {
+		// 	contenedor.scrollTo({
+		// 		left: 1000, 
+		// 		behavior: 'smooth' 
+		// 	});
+		// }
     });
 });
 $(document).ready(function() {
+	const contenedor = document.querySelector('.magazine-viewport'); 
     $('.previous-button-responsive').on('click', function() {
         $('.previous-button').click();
+		// if (contenedor) {
+		// 	contenedor.scrollTo({
+		// 		left: 250, 
+		// 		behavior: 'smooth' 
+		// 	});
+		// }
     });
 });
