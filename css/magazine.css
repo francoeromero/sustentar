@@ -834,8 +834,8 @@ video{
     left: 50%;                /* Centrado horizontal respecto al viewport */
     transform: translateX(-50%); /* Ajuste de centrado */
 	z-index: 99;
-	height: 100px;
-	width: 300px;
+	height: 150px;
+	width: 450px;
 	opacity: 0.8;
 	border: 2px solid rgb(147, 201, 21);
 	border-radius: 10px;
@@ -844,11 +844,14 @@ video{
 }
 .responsive-icons .r-icon img{
 	
-	width: 3rem;
+	width: 5rem;
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
 }
-
+.responsive-icons .r-icon img:hover{
+	width: 6rem;
+	transition: 1s;
+}
 
 
 .flechas_responsive{
