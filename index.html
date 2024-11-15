@@ -374,7 +374,7 @@ function loadApp() {
 	});
 
 	// Zoom.js
-
+///////////////////////////////////////////////////////////////////////////////////////////
 	$('.magazine-viewport').zoom({
 		flipbook: $('.magazine'),
 
@@ -442,12 +442,12 @@ function loadApp() {
 	});
 
 	// Zoom event
-
-	if ($.isTouch)
-		$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
-	else
-		$('.magazine-viewport').bind('zoom.tap', zoomTo);
-
+////////////////////////////////////////////////////////////////////////////// ZOOM DESACTIVADO
+	// if ($.isTouch)
+	// 	$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
+	// else
+	// 	$('.magazine-viewport').bind('zoom.tap', zoomTo);
+////////////////////////////////////////////////////////////////////////////// ZOOM DESACTIVADO
 
 	// Using arrow keys to turn the page
 	
@@ -478,6 +478,9 @@ function loadApp() {
 			break;
 		}
 	});
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
 
 	// URIs - Format #/page/1 
 
@@ -617,35 +620,36 @@ function loadApp() {
 
 }
 
+
 // Zoom icon
-
- $('.zoom-icon').bind('mouseover', function() { 
+////////////////////////////////////////////////////////////////////// ICONO DESACTIVADO
+//  $('.zoom-icon').bind('mouseover', function() { 
  	
- 	if ($(this).hasClass('zoom-icon-in'))
- 		$(this).addClass('zoom-icon-in-hover');
+//  	if ($(this).hasClass('zoom-icon-in'))
+//  		$(this).addClass('zoom-icon-in-hover');
 
- 	if ($(this).hasClass('zoom-icon-out'))
- 		$(this).addClass('zoom-icon-out-hover');
+//  	if ($(this).hasClass('zoom-icon-out'))
+//  		$(this).addClass('zoom-icon-out-hover');
  
- }).bind('mouseout', function() { 
+//  }).bind('mouseout', function() { 
  	
- 	 if ($(this).hasClass('zoom-icon-in'))
- 		$(this).removeClass('zoom-icon-in-hover');
+//  	 if ($(this).hasClass('zoom-icon-in'))
+//  		$(this).removeClass('zoom-icon-in-hover');
  	
- 	if ($(this).hasClass('zoom-icon-out'))
- 		$(this).removeClass('zoom-icon-out-hover');
+//  	if ($(this).hasClass('zoom-icon-out'))
+//  		$(this).removeClass('zoom-icon-out-hover');
 
- }).bind('click', function() {
+//  }).bind('click', function() {
 
- 	if ($(this).hasClass('zoom-icon-in'))
- 		$('.magazine-viewport').zoom('zoomIn');
- 	else if ($(this).hasClass('zoom-icon-out'))	
-		$('.magazine-viewport').zoom('zoomOut');
+//  	if ($(this).hasClass('zoom-icon-in'))
+//  		$('.magazine-viewport').zoom('zoomIn');
+//  	else if ($(this).hasClass('zoom-icon-out'))	
+// 		$('.magazine-viewport').zoom('zoomOut');
 
- });
+//  });
 
- $('#canvas').hide();
-
+//  $('#canvas').hide();
+///////////////////////////////////////////////////////////////////////////ICONO DESACTIVADO
 
 // Load the HTML4 version if there's not CSS transform
 
