@@ -225,17 +225,41 @@ function isChrome() {
 
 }
 
+// let contenedor = document.querySelector('.magazine-viewport');
+
+// if (contenedor) {
+// 	contenedor.scrollTo({
+// 		left: 2000, 
+// 		behavior: 'smooth' 
+// 	});
+// }
 
 function disableControls(page) {
-		if (page==1)
-			$('.previous-button').hide();
-		else
-			$('.previous-button').show();
-					
-		if (page==$('.magazine').turn('pages'))
-			$('.next-button').hide();
-		else
-			$('.next-button').show();
+    // Verifica si la página actual es la primera
+    if (page == 1) {
+        $('.previous-button').hide();
+
+		
+		const contenedor = document.querySelector('.magazine-viewport'); // Selecciona el elemento con la clase
+		if (contenedor) {
+			contenedor.scrollTo({
+				left: 0, // Cambia este valor a la posición deseada en el eje x
+				behavior: 'smooth' // 'smooth' para desplazamiento suave o 'auto' para instantáneo
+			});
+		}
+		
+
+
+    } else {
+        $('.previous-button').show();
+    }
+    
+    // Verifica si la página actual es la última
+    if (page == $('.magazine').turn('pages')) {
+        $('.next-button').hide();
+    } else {
+        $('.next-button').show();
+    }
 }
 
 
@@ -527,8 +551,8 @@ $(document).ready(function() {
 	// const contenedor = document.querySelector('.magazine-viewport'); 
     $('.next-button-responsive').on('click', function() {
         $('.next-button').click();
-		// if (contenedor) {
-		// 	contenedor.scrollTo({
+		// if (document.querySelector('.magazine-viewport')) {
+		// 	document.querySelector('.magazine-viewport').scrollTo({
 		// 		left: 1000, 
 		// 		behavior: 'smooth' 
 		// 	});
